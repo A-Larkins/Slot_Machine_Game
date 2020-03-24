@@ -46,6 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\GlobalsClass.cs" />
+    <Compile Include="Classes\InternalGameLogicClass.cs" />
+    <Compile Include="Classes\LeaderboardClass.cs" />
+    <Compile Include="Classes\PlayerClass.cs" />
+    <Compile Include="Classes\RandomNumberGeneratorClass.cs" />
+    <Compile Include="Forms\frmDisplayWinnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDisplayWinnings.Designer.cs">
+      <DependentUpon>frmDisplayWinnings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmExplainRulesPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmExplainRulesPage.Designer.cs">
+      <DependentUpon>frmExplainRulesPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSlotMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSlotMachine.Designer.cs">
+      <DependentUpon>frmSlotMachine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmWelcomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +77,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmDisplayWinnings.resx">
+      <DependentUpon>frmDisplayWinnings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmExplainRulesPage.resx">
+      <DependentUpon>frmExplainRulesPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSlotMachine.resx">
+      <DependentUpon>frmSlotMachine.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmWelcomePage.resx">
       <DependentUpon>frmWelcomePage.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,8 +111,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

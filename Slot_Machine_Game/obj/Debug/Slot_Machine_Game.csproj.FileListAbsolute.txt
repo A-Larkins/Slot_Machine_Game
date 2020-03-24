@@ -8,3 +8,6 @@ D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_G
 D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csproj.CoreCompileInputs.cache
 D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.exe
 D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.pdb
+D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmExplainRulesPage.resources
+D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmSlotMachine.resources
+D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmDisplayWinnings.resources
