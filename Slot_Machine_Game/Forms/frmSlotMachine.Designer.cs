@@ -142,6 +142,7 @@
             this.btnCashOut.TabIndex = 4;
             this.btnCashOut.Text = "Cash Out";
             this.btnCashOut.UseVisualStyleBackColor = true;
+            this.btnCashOut.Click += new System.EventHandler(this.btnCashOut_Click);
             // 
             // btnSpin
             // 
@@ -152,6 +153,7 @@
             this.btnSpin.TabIndex = 3;
             this.btnSpin.Text = "SPIN!";
             this.btnSpin.UseVisualStyleBackColor = true;
+            this.btnSpin.Click += new System.EventHandler(this.btnSpin_Click);
             // 
             // btnIncreaseBet
             // 
@@ -162,6 +164,7 @@
             this.btnIncreaseBet.TabIndex = 2;
             this.btnIncreaseBet.Text = "+";
             this.btnIncreaseBet.UseVisualStyleBackColor = true;
+            this.btnIncreaseBet.Click += new System.EventHandler(this.btnIncreaseBet_Click);
             // 
             // btnDecreaseBet
             // 
@@ -172,6 +175,7 @@
             this.btnDecreaseBet.TabIndex = 1;
             this.btnDecreaseBet.Text = "-";
             this.btnDecreaseBet.UseVisualStyleBackColor = true;
+            this.btnDecreaseBet.Click += new System.EventHandler(this.btnDecreaseBet_Click);
             // 
             // frmSlotMachine
             // 
@@ -195,6 +199,7 @@
             this.Name = "frmSlotMachine";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Slot Machine";
+            this.Load += new System.EventHandler(this.frmSlotMachine_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel3)).EndInit();

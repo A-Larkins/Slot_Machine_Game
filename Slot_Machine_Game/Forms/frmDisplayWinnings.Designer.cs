@@ -64,6 +64,7 @@
             this.btnPlayAgain.TabIndex = 1;
             this.btnPlayAgain.Text = "Play Again!";
             this.btnPlayAgain.UseVisualStyleBackColor = true;
+            this.btnPlayAgain.Click += new System.EventHandler(this.btnPlayAgain_Click);
             // 
             // btnExit
             // 

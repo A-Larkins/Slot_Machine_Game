@@ -26,11 +26,13 @@ namespace Slot_Machine_Game.Classes
         
 
         // Constructor sets name and balance.
-        public PlayerClass(string name, int balance)
+        public void playerClass(string name, int balance)
         {
-            this.name = name;
-            this.balance = Math.Abs(balance);
+            name = name;
+            balance = Math.Abs(balance);
         }
+
+        
 
         // Getter methods.
         public string getName()

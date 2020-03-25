@@ -15,6 +15,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Slot_Machine_Game.Classes;
+
 
 // Welcome form to get user's name and starting money balance.
 // Name must be validated and balance must be greater than 0.
@@ -25,7 +27,7 @@ namespace Slot_Machine_Game
     {
         // Class attributes to get name and balance.
         private string playerInputName;
-        private int playerInputBalance;
+        private int playerInputBalance = 0;
 
         // Constructor.
         public frmWelcomePage()
@@ -36,12 +38,13 @@ namespace Slot_Machine_Game
         // Event handler for when the OK button is clicked.
         // Check if name is valid,
         // check if money is > 0,
+        // update player object,
         // load and go to next form: rules form.
         private void btnOk_Click(object sender, EventArgs e)
         {
             try
             {
-                // get player name and balance
+                // try to get player name and balance
                 playerInputName = txtName.Text;
                 playerInputBalance = Convert.ToInt32(txtBalance.Text);
 
@@ -56,14 +59,16 @@ namespace Slot_Machine_Game
                     txtBalance.Text = "";
                     txtName.Focus();
                 }
-                else
+                else // else we're good to go.
                 {
+                    GlobalsClass.playerObject.playerClass(txtName.Text,
+                        Int32.Parse(txtBalance.Text));
                     Form frmExplainRulesPage = new Forms.frmExplainRulesPage();
                     frmExplainRulesPage.Show();
                     this.Hide();
                 }
             }
-            catch
+            catch // catch error and reset
             {
                 MessageBox.Show("Enter valid name and balance greater than 0.", "Error");
                 txtName.Text = "";

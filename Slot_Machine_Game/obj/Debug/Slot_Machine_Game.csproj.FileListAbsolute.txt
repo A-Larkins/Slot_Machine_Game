@@ -11,3 +11,16 @@ D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_G
 D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmExplainRulesPage.resources
 D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmSlotMachine.resources
 D:\CIS3309\project3\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmDisplayWinnings.resources
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csprojAssemblyReference.cache
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmDisplayWinnings.resources
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmExplainRulesPage.resources
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmSlotMachine.resources
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.frmWelcomePage.resources
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Properties.Resources.resources
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csproj.GenerateResource.cache
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csproj.CoreCompileInputs.cache
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.exe
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.pdb
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.exe.config
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.exe
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.pdb

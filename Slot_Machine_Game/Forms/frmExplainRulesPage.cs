@@ -15,6 +15,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Slot_Machine_Game.Classes;
+
 
 // This class shows a description of the slot
 // machine and a table showing the payout
