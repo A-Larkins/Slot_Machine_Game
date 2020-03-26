@@ -55,7 +55,9 @@ namespace Slot_Machine_Game.Forms
             currentBet++;
             if(currentBet>totalScore)
             {
+                btnDecreaseBet.Visible = false;
                 MessageBox.Show("You don't have enough coins for that bet...", "Error");
+                btnSpin.Focus();
                 currentBet--;
             }
             else
@@ -139,7 +141,7 @@ namespace Slot_Machine_Game.Forms
                 MessageBox.Show("Give up, just quit, because in this life, " +
                     "you can’t win. Yeah, you can try, but in the end you’re just " +
                     "gonna lose, big time, because the world is run by the Man. The " +
-                    "Man, oh, you don’t know the Man. He’s everywhere. In the White " +
+                    "Man, oh, you don’t know the Man? He’s everywhere. In the White " +
                     "House… down the hall… Ms. Mullins, she’s the Man. And the Man " +
                     "ruined the ozone, he’s burning down the Amazon, and he kidnapped " +
                     "Shamu and put her in a chlorine tank! And there used to be a way " +
@@ -155,9 +157,10 @@ namespace Slot_Machine_Game.Forms
         }
 
         // Click event handler method to exit slot machine form
-        // and go to display winnings form.
+        // and go to display winnings form. player object's score is total score.
         private void btnCashOut_Click(object sender, EventArgs e)
         {
+            GlobalsClass.playerObject.setScore(totalScore);
             Form frmDisplayWinnings = new Forms.frmDisplayWinnings();
             frmDisplayWinnings.Show();
             this.Hide();

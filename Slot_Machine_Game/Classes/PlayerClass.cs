@@ -46,9 +46,9 @@ namespace Slot_Machine_Game.Classes
             return finalScore;
         }
         // Setter method.
-        public void setScore(int finalScore)
+        public void setScore(int inScore)
         {
-            this.finalScore = finalScore;
+            finalScore = inScore - balance;
         }
 
         // Return totalScore.
