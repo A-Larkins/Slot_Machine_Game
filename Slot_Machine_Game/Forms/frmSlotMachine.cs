@@ -187,6 +187,7 @@ namespace Slot_Machine_Game.Forms
                 pbSlotReel3.Image = imgListForReels.Images[randNumForReel_3];
                 pbSlotReel3.Refresh();
                 
+                // Wait 500 milliseconds.
                 Task.Delay(500).Wait();
             }
             timer.Stop();
