@@ -83,7 +83,6 @@
             this.txtBalance.Name = "txtBalance";
             this.txtBalance.Size = new System.Drawing.Size(188, 29);
             this.txtBalance.TabIndex = 2;
-            this.txtBalance.Text = "1";
             this.txtBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnOk

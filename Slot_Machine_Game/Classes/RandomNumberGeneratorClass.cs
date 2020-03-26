@@ -32,7 +32,7 @@ namespace Slot_Machine_Game.Classes
         }
 
         // Method to return a random num from the array.
-        public int returnRandomNum ()
+        public int getRandomNum ()
         {
             return returnRandomNumber = randomNumber.Next(0, arrRepOfPics.Length);
         }

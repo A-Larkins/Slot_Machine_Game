@@ -29,6 +29,12 @@ namespace Slot_Machine_Game.Forms
             InitializeComponent();
         }
 
+        // Show winnings upon load with this event handler.
+        private void frmDisplayWinnings_Load(object sender, EventArgs e)
+        {
+            lblCoinsWon.Text = GlobalsClass.playerObject.getScore().ToString();
+        }
+
         // Exit button click event handler.
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -44,6 +50,8 @@ namespace Slot_Machine_Game.Forms
             newGame.Show();
             this.Close();
         }
+
+        
 
         // Might show a top 10 leaderboard since we have
         // a player class to work with.

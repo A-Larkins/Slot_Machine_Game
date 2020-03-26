@@ -12,8 +12,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-// Player class used to store name
-// and money balance of the player.
+// Player class used to store inName
+// and money inBalance of the player.
 
 namespace Slot_Machine_Game.Classes
 {
@@ -26,13 +26,11 @@ namespace Slot_Machine_Game.Classes
         
 
         // Constructor sets name and balance.
-        public void playerClass(string name, int balance)
+        public void playerClass(string inName, int inBalance)
         {
-            name = name;
-            balance = Math.Abs(balance);
+            name = inName;
+            balance = inBalance;
         }
-
-        
 
         // Getter methods.
         public string getName()
@@ -53,7 +51,7 @@ namespace Slot_Machine_Game.Classes
             this.finalScore = finalScore;
         }
 
-        // Return score.
+        // Return totalScore.
         public int calculateScore()
         {
             return finalScore = finalScore - balance;

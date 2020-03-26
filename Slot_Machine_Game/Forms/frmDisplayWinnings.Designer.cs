@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lblWinnings = new System.Windows.Forms.Label();
-            this.lblMoneyWon = new System.Windows.Forms.Label();
+            this.lblCoinsWon = new System.Windows.Forms.Label();
             this.btnPlayAgain = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -45,15 +45,15 @@
             this.lblWinnings.TabIndex = 0;
             this.lblWinnings.Text = "Total Winnings:";
             // 
-            // lblMoneyWon
+            // lblCoinsWon
             // 
-            this.lblMoneyWon.AutoSize = true;
-            this.lblMoneyWon.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoneyWon.Location = new System.Drawing.Point(109, 63);
-            this.lblMoneyWon.Name = "lblMoneyWon";
-            this.lblMoneyWon.Size = new System.Drawing.Size(25, 26);
-            this.lblMoneyWon.TabIndex = 1;
-            this.lblMoneyWon.Text = "0";
+            this.lblCoinsWon.AutoSize = true;
+            this.lblCoinsWon.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCoinsWon.Location = new System.Drawing.Point(109, 63);
+            this.lblCoinsWon.Name = "lblCoinsWon";
+            this.lblCoinsWon.Size = new System.Drawing.Size(25, 26);
+            this.lblCoinsWon.TabIndex = 1;
+            this.lblCoinsWon.Text = "0";
             // 
             // btnPlayAgain
             // 
@@ -87,11 +87,12 @@
             this.ClientSize = new System.Drawing.Size(257, 180);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPlayAgain);
-            this.Controls.Add(this.lblMoneyWon);
+            this.Controls.Add(this.lblCoinsWon);
             this.Controls.Add(this.lblWinnings);
             this.Name = "frmDisplayWinnings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Game Over";
+            this.Load += new System.EventHandler(this.frmDisplayWinnings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,7 +101,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblWinnings;
-        private System.Windows.Forms.Label lblMoneyWon;
+        private System.Windows.Forms.Label lblCoinsWon;
         private System.Windows.Forms.Button btnPlayAgain;
         private System.Windows.Forms.Button btnExit;
     }

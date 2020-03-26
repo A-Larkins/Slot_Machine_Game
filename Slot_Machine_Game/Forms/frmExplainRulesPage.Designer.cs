@@ -42,14 +42,14 @@
             this.lblRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRules.Location = new System.Drawing.Point(68, 27);
             this.lblRules.Name = "lblRules";
-            this.lblRules.Size = new System.Drawing.Size(349, 120);
+            this.lblRules.Size = new System.Drawing.Size(328, 140);
             this.lblRules.TabIndex = 0;
             this.lblRules.Text = resources.GetString("lblRules.Text");
             // 
             // btnPlay
             // 
             this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlay.Location = new System.Drawing.Point(488, 27);
+            this.btnPlay.Location = new System.Drawing.Point(494, 36);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(239, 120);
             this.btnPlay.TabIndex = 2;
@@ -60,9 +60,9 @@
             // pbWinningsTable
             // 
             this.pbWinningsTable.Image = ((System.Drawing.Image)(resources.GetObject("pbWinningsTable.Image")));
-            this.pbWinningsTable.Location = new System.Drawing.Point(72, 181);
+            this.pbWinningsTable.Location = new System.Drawing.Point(82, 236);
             this.pbWinningsTable.Name = "pbWinningsTable";
-            this.pbWinningsTable.Size = new System.Drawing.Size(655, 410);
+            this.pbWinningsTable.Size = new System.Drawing.Size(636, 352);
             this.pbWinningsTable.TabIndex = 3;
             this.pbWinningsTable.TabStop = false;
             // 
@@ -82,7 +82,7 @@
             this.AcceptButton = this.btnPlay;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 603);
+            this.ClientSize = new System.Drawing.Size(799, 614);
             this.Controls.Add(this.lblWinningsTable);
             this.Controls.Add(this.pbWinningsTable);
             this.Controls.Add(this.btnPlay);
