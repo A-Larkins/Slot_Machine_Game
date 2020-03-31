@@ -24,3 +24,16 @@ D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.pdb
 D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.exe.config
 D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.exe
 D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.pdb
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.exe.config
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.exe
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\bin\Debug\Slot_Machine_Game.pdb
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csprojAssemblyReference.cache
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmDisplayWinnings.resources
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmExplainRulesPage.resources
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmSlotMachine.resources
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.frmWelcomePage.resources
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Properties.Resources.resources
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csproj.GenerateResource.cache
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csproj.CoreCompileInputs.cache
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.exe
+C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.pdb

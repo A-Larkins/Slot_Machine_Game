@@ -34,20 +34,26 @@
             this.pbSlotReel1 = new System.Windows.Forms.PictureBox();
             this.pbSlotReel2 = new System.Windows.Forms.PictureBox();
             this.pbSlotReel3 = new System.Windows.Forms.PictureBox();
-            this.lblWinnings = new System.Windows.Forms.Label();
             this.lblBalance = new System.Windows.Forms.Label();
-            this.txtWinnings = new System.Windows.Forms.TextBox();
             this.txtBalance = new System.Windows.Forms.TextBox();
             this.txtBet = new System.Windows.Forms.TextBox();
             this.btnCashOut = new System.Windows.Forms.Button();
             this.btnSpin = new System.Windows.Forms.Button();
             this.btnIncreaseBet = new System.Windows.Forms.Button();
-            this.btnDecreaseBet = new System.Windows.Forms.Button();
             this.imgListForReels = new System.Windows.Forms.ImageList(this.components);
             this.lblBet = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnDecreaseBet = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtPlayerName = new System.Windows.Forms.TextBox();
+            this.txtWinnings = new System.Windows.Forms.TextBox();
+            this.lblWinnings = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSlotMachineTitle
@@ -55,72 +61,63 @@
             this.lblSlotMachineTitle.AutoSize = true;
             this.lblSlotMachineTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSlotMachineTitle.ForeColor = System.Drawing.Color.Maroon;
-            this.lblSlotMachineTitle.Location = new System.Drawing.Point(248, 19);
+            this.lblSlotMachineTitle.Image = ((System.Drawing.Image)(resources.GetObject("lblSlotMachineTitle.Image")));
+            this.lblSlotMachineTitle.Location = new System.Drawing.Point(54, 42);
+            this.lblSlotMachineTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblSlotMachineTitle.Name = "lblSlotMachineTitle";
-            this.lblSlotMachineTitle.Size = new System.Drawing.Size(297, 51);
+            this.lblSlotMachineTitle.Size = new System.Drawing.Size(1506, 97);
             this.lblSlotMachineTitle.TabIndex = 0;
-            this.lblSlotMachineTitle.Text = "Slot Machine!";
+            this.lblSlotMachineTitle.Text = "                                                             ";
             // 
             // pbSlotReel1
             // 
-            this.pbSlotReel1.Location = new System.Drawing.Point(12, 84);
+            this.pbSlotReel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbSlotReel1.Location = new System.Drawing.Point(39, 276);
+            this.pbSlotReel1.Margin = new System.Windows.Forms.Padding(6);
             this.pbSlotReel1.Name = "pbSlotReel1";
-            this.pbSlotReel1.Size = new System.Drawing.Size(250, 250);
+            this.pbSlotReel1.Size = new System.Drawing.Size(500, 481);
             this.pbSlotReel1.TabIndex = 1;
             this.pbSlotReel1.TabStop = false;
             // 
             // pbSlotReel2
             // 
-            this.pbSlotReel2.Location = new System.Drawing.Point(268, 84);
+            this.pbSlotReel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbSlotReel2.Location = new System.Drawing.Point(551, 276);
+            this.pbSlotReel2.Margin = new System.Windows.Forms.Padding(6);
             this.pbSlotReel2.Name = "pbSlotReel2";
-            this.pbSlotReel2.Size = new System.Drawing.Size(250, 250);
+            this.pbSlotReel2.Size = new System.Drawing.Size(500, 481);
             this.pbSlotReel2.TabIndex = 2;
             this.pbSlotReel2.TabStop = false;
             // 
             // pbSlotReel3
             // 
-            this.pbSlotReel3.Location = new System.Drawing.Point(524, 84);
+            this.pbSlotReel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbSlotReel3.Location = new System.Drawing.Point(1063, 276);
+            this.pbSlotReel3.Margin = new System.Windows.Forms.Padding(6);
             this.pbSlotReel3.Name = "pbSlotReel3";
-            this.pbSlotReel3.Size = new System.Drawing.Size(250, 250);
+            this.pbSlotReel3.Size = new System.Drawing.Size(500, 481);
             this.pbSlotReel3.TabIndex = 3;
             this.pbSlotReel3.TabStop = false;
-            // 
-            // lblWinnings
-            // 
-            this.lblWinnings.AutoSize = true;
-            this.lblWinnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblWinnings.Location = new System.Drawing.Point(46, 522);
-            this.lblWinnings.Name = "lblWinnings";
-            this.lblWinnings.Size = new System.Drawing.Size(103, 24);
-            this.lblWinnings.TabIndex = 4;
-            this.lblWinnings.Text = "Winnings:";
             // 
             // lblBalance
             // 
             this.lblBalance.AutoSize = true;
             this.lblBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBalance.Location = new System.Drawing.Point(310, 522);
+            this.lblBalance.Image = ((System.Drawing.Image)(resources.GetObject("lblBalance.Image")));
+            this.lblBalance.Location = new System.Drawing.Point(1025, 183);
+            this.lblBalance.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblBalance.Name = "lblBalance";
-            this.lblBalance.Size = new System.Drawing.Size(91, 24);
+            this.lblBalance.Size = new System.Drawing.Size(284, 44);
             this.lblBalance.TabIndex = 5;
-            this.lblBalance.Text = "Balance:";
-            // 
-            // txtWinnings
-            // 
-            this.txtWinnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWinnings.Location = new System.Drawing.Point(155, 519);
-            this.txtWinnings.Name = "txtWinnings";
-            this.txtWinnings.Size = new System.Drawing.Size(100, 29);
-            this.txtWinnings.TabIndex = 1;
-            this.txtWinnings.TabStop = false;
-            this.txtWinnings.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblBalance.Text = "                        ";
             // 
             // txtBalance
             // 
             this.txtBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBalance.Location = new System.Drawing.Point(407, 519);
+            this.txtBalance.Location = new System.Drawing.Point(1350, 180);
+            this.txtBalance.Margin = new System.Windows.Forms.Padding(6);
             this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(100, 29);
+            this.txtBalance.Size = new System.Drawing.Size(196, 50);
             this.txtBalance.TabIndex = 7;
             this.txtBalance.TabStop = false;
             this.txtBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -128,10 +125,11 @@
             // txtBet
             // 
             this.txtBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBet.Location = new System.Drawing.Point(194, 364);
+            this.txtBet.Location = new System.Drawing.Point(1227, 933);
+            this.txtBet.Margin = new System.Windows.Forms.Padding(6);
             this.txtBet.Multiline = true;
             this.txtBet.Name = "txtBet";
-            this.txtBet.Size = new System.Drawing.Size(110, 55);
+            this.txtBet.Size = new System.Drawing.Size(111, 102);
             this.txtBet.TabIndex = 10;
             this.txtBet.TabStop = false;
             this.txtBet.Text = "0";
@@ -139,50 +137,57 @@
             // 
             // btnCashOut
             // 
+            this.btnCashOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCashOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCashOut.BackgroundImage")));
+            this.btnCashOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCashOut.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnCashOut.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnCashOut.FlatAppearance.BorderSize = 0;
+            this.btnCashOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCashOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCashOut.Location = new System.Drawing.Point(552, 519);
+            this.btnCashOut.Location = new System.Drawing.Point(79, 858);
+            this.btnCashOut.Margin = new System.Windows.Forms.Padding(6);
             this.btnCashOut.Name = "btnCashOut";
-            this.btnCashOut.Size = new System.Drawing.Size(167, 31);
+            this.btnCashOut.Size = new System.Drawing.Size(462, 130);
             this.btnCashOut.TabIndex = 4;
-            this.btnCashOut.Text = "Cash Out";
-            this.btnCashOut.UseVisualStyleBackColor = true;
+            this.btnCashOut.UseVisualStyleBackColor = false;
             this.btnCashOut.Click += new System.EventHandler(this.btnCashOut_Click);
             // 
             // btnSpin
             // 
+            this.btnSpin.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSpin.BackgroundImage")));
+            this.btnSpin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSpin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSpin.Enabled = false;
+            this.btnSpin.FlatAppearance.BorderColor = System.Drawing.Color.SteelBlue;
+            this.btnSpin.FlatAppearance.BorderSize = 0;
+            this.btnSpin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSpin.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSpin.Location = new System.Drawing.Point(407, 382);
+            this.btnSpin.ForeColor = System.Drawing.Color.SteelBlue;
+            this.btnSpin.Location = new System.Drawing.Point(595, 779);
+            this.btnSpin.Margin = new System.Windows.Forms.Padding(6);
             this.btnSpin.Name = "btnSpin";
-            this.btnSpin.Size = new System.Drawing.Size(284, 77);
+            this.btnSpin.Size = new System.Drawing.Size(406, 389);
             this.btnSpin.TabIndex = 3;
-            this.btnSpin.Text = "SPIN!";
-            this.btnSpin.UseVisualStyleBackColor = true;
+            this.btnSpin.UseVisualStyleBackColor = false;
             this.btnSpin.Click += new System.EventHandler(this.btnSpin_Click);
             // 
             // btnIncreaseBet
             // 
+            this.btnIncreaseBet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnIncreaseBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnIncreaseBet.BackgroundImage")));
+            this.btnIncreaseBet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIncreaseBet.FlatAppearance.BorderSize = 0;
+            this.btnIncreaseBet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIncreaseBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncreaseBet.Location = new System.Drawing.Point(223, 425);
+            this.btnIncreaseBet.Location = new System.Drawing.Point(1350, 928);
+            this.btnIncreaseBet.Margin = new System.Windows.Forms.Padding(6);
             this.btnIncreaseBet.Name = "btnIncreaseBet";
-            this.btnIncreaseBet.Size = new System.Drawing.Size(81, 55);
+            this.btnIncreaseBet.Size = new System.Drawing.Size(126, 113);
             this.btnIncreaseBet.TabIndex = 2;
-            this.btnIncreaseBet.Text = "+";
-            this.btnIncreaseBet.UseVisualStyleBackColor = true;
+            this.btnIncreaseBet.UseVisualStyleBackColor = false;
             this.btnIncreaseBet.Click += new System.EventHandler(this.btnIncreaseBet_Click);
-            // 
-            // btnDecreaseBet
-            // 
-            this.btnDecreaseBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDecreaseBet.Location = new System.Drawing.Point(136, 425);
-            this.btnDecreaseBet.Name = "btnDecreaseBet";
-            this.btnDecreaseBet.Size = new System.Drawing.Size(81, 55);
-            this.btnDecreaseBet.TabIndex = 1;
-            this.btnDecreaseBet.Text = "-";
-            this.btnDecreaseBet.UseVisualStyleBackColor = true;
-            this.btnDecreaseBet.Visible = false;
-            this.btnDecreaseBet.Click += new System.EventHandler(this.btnDecreaseBet_Click);
             // 
             // imgListForReels
             // 
@@ -197,34 +202,130 @@
             // lblBet
             // 
             this.lblBet.AutoSize = true;
-            this.lblBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBet.Location = new System.Drawing.Point(142, 382);
+            this.lblBet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblBet.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBet.ForeColor = System.Drawing.Color.White;
+            this.lblBet.Location = new System.Drawing.Point(1221, 858);
+            this.lblBet.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblBet.Name = "lblBet";
-            this.lblBet.Size = new System.Drawing.Size(46, 24);
+            this.lblBet.Size = new System.Drawing.Size(121, 56);
             this.lblBet.TabIndex = 11;
-            this.lblBet.Text = "Bet:";
+            this.lblBet.Text = "BET";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(1010, 806);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(550, 325);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(36, 806);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(550, 325);
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnDecreaseBet
+            // 
+            this.btnDecreaseBet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnDecreaseBet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDecreaseBet.BackgroundImage")));
+            this.btnDecreaseBet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDecreaseBet.FlatAppearance.BorderSize = 0;
+            this.btnDecreaseBet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDecreaseBet.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecreaseBet.Location = new System.Drawing.Point(1089, 928);
+            this.btnDecreaseBet.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDecreaseBet.Name = "btnDecreaseBet";
+            this.btnDecreaseBet.Size = new System.Drawing.Size(126, 113);
+            this.btnDecreaseBet.TabIndex = 15;
+            this.btnDecreaseBet.UseVisualStyleBackColor = false;
+            this.btnDecreaseBet.Click += new System.EventHandler(this.btnDecreaseBet_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Maroon;
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(41, 162);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(498, 97);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "                   ";
+            // 
+            // txtPlayerName
+            // 
+            this.txtPlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlayerName.Location = new System.Drawing.Point(551, 183);
+            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(6);
+            this.txtPlayerName.Name = "txtPlayerName";
+            this.txtPlayerName.Size = new System.Drawing.Size(196, 50);
+            this.txtPlayerName.TabIndex = 17;
+            this.txtPlayerName.TabStop = false;
+            this.txtPlayerName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtWinnings
+            // 
+            this.txtWinnings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWinnings.Location = new System.Drawing.Point(334, 1021);
+            this.txtWinnings.Margin = new System.Windows.Forms.Padding(6);
+            this.txtWinnings.Name = "txtWinnings";
+            this.txtWinnings.Size = new System.Drawing.Size(196, 50);
+            this.txtWinnings.TabIndex = 18;
+            this.txtWinnings.TabStop = false;
+            this.txtWinnings.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblWinnings
+            // 
+            this.lblWinnings.AutoSize = true;
+            this.lblWinnings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lblWinnings.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWinnings.ForeColor = System.Drawing.Color.White;
+            this.lblWinnings.Location = new System.Drawing.Point(86, 1015);
+            this.lblWinnings.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblWinnings.Name = "lblWinnings";
+            this.lblWinnings.Size = new System.Drawing.Size(238, 56);
+            this.lblWinnings.TabIndex = 19;
+            this.lblWinnings.Text = "Winnings";
             // 
             // frmSlotMachine
             // 
             this.AcceptButton = this.btnSpin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.CancelButton = this.btnCashOut;
-            this.ClientSize = new System.Drawing.Size(788, 581);
-            this.Controls.Add(this.lblBet);
-            this.Controls.Add(this.btnDecreaseBet);
-            this.Controls.Add(this.btnIncreaseBet);
-            this.Controls.Add(this.btnSpin);
-            this.Controls.Add(this.btnCashOut);
-            this.Controls.Add(this.txtBet);
-            this.Controls.Add(this.txtBalance);
-            this.Controls.Add(this.txtWinnings);
-            this.Controls.Add(this.lblBalance);
+            this.ClientSize = new System.Drawing.Size(1605, 1183);
             this.Controls.Add(this.lblWinnings);
+            this.Controls.Add(this.txtWinnings);
+            this.Controls.Add(this.txtPlayerName);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnDecreaseBet);
+            this.Controls.Add(this.lblBet);
+            this.Controls.Add(this.btnIncreaseBet);
+            this.Controls.Add(this.txtBet);
+            this.Controls.Add(this.btnCashOut);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnSpin);
+            this.Controls.Add(this.txtBalance);
+            this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.pbSlotReel3);
             this.Controls.Add(this.pbSlotReel2);
             this.Controls.Add(this.pbSlotReel1);
             this.Controls.Add(this.lblSlotMachineTitle);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "frmSlotMachine";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Slot Machine";
@@ -232,6 +333,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlotReel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,16 +346,20 @@
         private System.Windows.Forms.PictureBox pbSlotReel1;
         private System.Windows.Forms.PictureBox pbSlotReel2;
         private System.Windows.Forms.PictureBox pbSlotReel3;
-        private System.Windows.Forms.Label lblWinnings;
         private System.Windows.Forms.Label lblBalance;
-        private System.Windows.Forms.TextBox txtWinnings;
         private System.Windows.Forms.TextBox txtBalance;
         private System.Windows.Forms.TextBox txtBet;
         private System.Windows.Forms.Button btnCashOut;
         private System.Windows.Forms.Button btnSpin;
         private System.Windows.Forms.Button btnIncreaseBet;
-        private System.Windows.Forms.Button btnDecreaseBet;
         private System.Windows.Forms.ImageList imgListForReels;
         private System.Windows.Forms.Label lblBet;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnDecreaseBet;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPlayerName;
+        private System.Windows.Forms.TextBox txtWinnings;
+        private System.Windows.Forms.Label lblWinnings;
     }
 }

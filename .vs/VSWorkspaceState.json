@@ -3,8 +3,9 @@
     "",
     "\\Slot_Machine_Game",
     "\\Slot_Machine_Game\\Classes",
-    "\\Slot_Machine_Game\\Forms"
+    "\\Slot_Machine_Game\\Forms",
+    "\\Slot_Machine_Game\\Pics"
   ],
-  "SelectedNode": "\\Slot_Machine_Game\\Classes\\PlayerClass.cs",
+  "SelectedNode": "\\Slot_Machine_Game\\Forms\\frmWelcomePage.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -28,6 +28,7 @@ namespace Slot_Machine_Game.Forms
         private int currentBet = 0;
         private int winnings = 0;
         private int totalScore = GlobalsClass.playerObject.getBalance();
+        private string name = GlobalsClass.playerObject.getName();
 
         // Array for keeping track of which pictures are picked using the random nums
         // returned from RNG.
@@ -42,10 +43,13 @@ namespace Slot_Machine_Game.Forms
         }
 
         // Load event method to show the balance that the player entered in the welcome form.
-        // decrease button is hidden until bet is > 1.
+        //   button is hidden until bet is > 1.
         private void frmSlotMachine_Load(object sender, EventArgs e)
         {
             txtBalance.Text = totalScore.ToString();
+            txtPlayerName.Text = name;
+            txtPlayerName.Enabled = false;
+            //txtBalance.Enabled = false;
         }
 
         // Click event handler method for the + button. Increments the current bet.
@@ -110,6 +114,7 @@ namespace Slot_Machine_Game.Forms
         // Let user play until they have 0 coins.
         private void btnSpin_Click(object sender, EventArgs e)
         {
+            btnSpin.BackColor = Color.SteelBlue;
             spin();
 
             winnings = calculateReelCombos();
@@ -219,7 +224,5 @@ namespace Slot_Machine_Game.Forms
 
             else return 0;
         }
-
-
     }
 }
