@@ -69,7 +69,7 @@ namespace Slot_Machine_Game
             catch // catch error and reset
             {
                 MessageBox.Show("Enter valid name and balance that is a whole number and" +
-                    "greater than 0.", "Error");
+                    " greater than 0.", "Error");
                 txtName.Text = "";
                 txtBalance.Text = "";
                 txtName.Focus();

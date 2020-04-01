@@ -59,8 +59,9 @@ namespace Slot_Machine_Game.Forms
             currentBet++;
             if(currentBet>totalScore)
             {
-                btnDecreaseBet.Visible = false;
+                btnDecreaseBet.Visible = true;
                 MessageBox.Show("You don't have enough coins for that bet...", "Error");
+                btnIncreaseBet.Visible = false;
                 btnSpin.Focus();
                 currentBet--;
             }
@@ -114,51 +115,61 @@ namespace Slot_Machine_Game.Forms
         // Let user play until they have 0 coins.
         private void btnSpin_Click(object sender, EventArgs e)
         {
-            btnSpin.BackColor = Color.SteelBlue;
-            spin();
-
-            winnings = calculateReelCombos();
-
-            if (winnings == 300)
+            if (currentBet <= totalScore)
             {
-                MessageBox.Show("+300 \n Go crazy folks, go crazy!", "JACKPOT");
-                totalScore += winnings;
-                txtBalance.Text = totalScore.ToString();
-            }
-            else if (winnings == 0)
-            {
-                MessageBox.Show("0\n Slump? You're not in a slump. You're just not hitting...",
-                    "You Lose");
-                totalScore -= currentBet;
-                txtBalance.Text = totalScore.ToString();
+                btnSpin.BackColor = Color.SteelBlue;
+                spin();
+
+                winnings = calculateReelCombos();
+
+                if (winnings == 300)
+                {
+                    MessageBox.Show("+300 \n Go crazy folks, go crazy!", "JACKPOT");
+                    totalScore += winnings;
+                    txtBalance.Text = totalScore.ToString();
+                }
+                else if (winnings == 0)
+                {
+                    MessageBox.Show("0\n Slump? You're not in a slump. You're just not hitting...",
+                        "You Lose");
+                    totalScore -= currentBet;
+                    txtBalance.Text = totalScore.ToString();
+                }
+                else
+                {
+                    MessageBox.Show(" + " + winnings, "You Win");
+                    totalScore += winnings;
+                    txtBalance.Text = totalScore.ToString();
+                }
+
+                txtWinnings.Text = winnings.ToString();
+
+                if (totalScore <= 0)
+                {
+                    MessageBox.Show("Give up, just quit, because in this life, " +
+                        "you can’t win. Yeah, you can try, but in the end you’re just " +
+                        "gonna lose, big time, because the world is run by the Man. The " +
+                        "Man, oh, you don’t know the Man? He’s everywhere. In the White " +
+                        "House… down the hall… Ms. Mullins, she’s the Man. And the Man " +
+                        "ruined the ozone, he’s burning down the Amazon, and he kidnapped " +
+                        "Shamu and put her in a chlorine tank! And there used to be a way " +
+                        "to stick it to the Man. It was called rock ‘n roll, but guess what, " +
+                        "oh no, the Man ruined that, too, with a little thing called MTV! So " +
+                        "don’t waste your time trying to make anything cool or pure or awesome " +
+                        "’cause the Man is just gonna call you a fat washed up loser and crush " +
+                        "your soul. So do yourselves a favor and just GIVE UP!", "Out Of Coins");
+                    Form frmDisplayWinnings = new Forms.frmDisplayWinnings();
+                    frmDisplayWinnings.Show();
+                    this.Hide();
+                }
             }
             else
             {
-                MessageBox.Show(" + " + winnings, "You Win");
-                totalScore += winnings;
-                txtBalance.Text = totalScore.ToString();
+                MessageBox.Show("You don't have the coins for that bet...", "Error");
             }
 
-            txtWinnings.Text = winnings.ToString();
 
-            if (totalScore<=0)
-            {
-                MessageBox.Show("Give up, just quit, because in this life, " +
-                    "you can’t win. Yeah, you can try, but in the end you’re just " +
-                    "gonna lose, big time, because the world is run by the Man. The " +
-                    "Man, oh, you don’t know the Man? He’s everywhere. In the White " +
-                    "House… down the hall… Ms. Mullins, she’s the Man. And the Man " +
-                    "ruined the ozone, he’s burning down the Amazon, and he kidnapped " +
-                    "Shamu and put her in a chlorine tank! And there used to be a way " +
-                    "to stick it to the Man. It was called rock ‘n roll, but guess what, " +
-                    "oh no, the Man ruined that, too, with a little thing called MTV! So " +
-                    "don’t waste your time trying to make anything cool or pure or awesome " +
-                    "’cause the Man is just gonna call you a fat washed up loser and crush " +
-                    "your soul. So do yourselves a favor and just GIVE UP!", "Out Of Coins");
-                Form frmDisplayWinnings = new Forms.frmDisplayWinnings();
-                frmDisplayWinnings.Show();
-                this.Hide();
-            }
+            
         }
 
         // Click event handler method to exit slot machine form
