@@ -34,11 +34,11 @@ namespace Slot_Machine_Game.Forms
             {
                 lblWinnings.Text = "Jackpot, go crazy folks!";
             }
-            if (txtDisplayWinnings.Text == "0")
+            else if (txtDisplayWinnings.Text == "0")
             {
                 lblWinnings.Text = "Slump? You're not in a slump. You're just not hitting...";
             }
-            else
+            else 
             {
                 lblWinnings.Text = "You win!";
             }
