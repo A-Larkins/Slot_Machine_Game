@@ -66,6 +66,7 @@ namespace Slot_Machine_Game.Classes
             
         }
 
+        // name display into a string to be used by leaderboard object.
         public string playerToString()
         {
             string strFinalScore = name + ": " + finalScore;

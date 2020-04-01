@@ -51,11 +51,11 @@
     <Compile Include="Classes\LeaderboardClass.cs" />
     <Compile Include="Classes\PlayerClass.cs" />
     <Compile Include="Classes\RandomNumberGeneratorClass.cs" />
-    <Compile Include="Forms\frmDisplayWinnings.cs">
+    <Compile Include="Forms\frmDisplayFinalWinnings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmDisplayWinnings.Designer.cs">
-      <DependentUpon>frmDisplayWinnings.cs</DependentUpon>
+    <Compile Include="Forms\frmDisplayFinalWinnings.Designer.cs">
+      <DependentUpon>frmDisplayFinalWinnings.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmExplainRulesPage.cs">
       <SubType>Form</SubType>
@@ -75,10 +75,16 @@
     <Compile Include="Forms\frmWelcomePage.Designer.cs">
       <DependentUpon>frmWelcomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmDisplayWinnings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDisplayWinnings.Designer.cs">
+      <DependentUpon>frmDisplayWinnings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\frmDisplayWinnings.resx">
-      <DependentUpon>frmDisplayWinnings.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmDisplayFinalWinnings.resx">
+      <DependentUpon>frmDisplayFinalWinnings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmExplainRulesPage.resx">
       <DependentUpon>frmExplainRulesPage.cs</DependentUpon>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmWelcomePage.resx">
       <DependentUpon>frmWelcomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDisplayWinnings.resx">
+      <DependentUpon>frmDisplayWinnings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

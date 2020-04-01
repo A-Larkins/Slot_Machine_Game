@@ -37,3 +37,4 @@ C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Ma
 C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.csproj.CoreCompileInputs.cache
 C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.exe
 C:\Users\Eric\source\repos\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.pdb
+D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\obj\Debug\Slot_Machine_Game.Forms.frmDisplayFinalWinnings.resources

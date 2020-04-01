@@ -1,12 +1,4 @@
-﻿/*
- * Andrew Larkins
- * Eric Friedman
- * CIS-3309
- * Slot Machine Game
- * 03/21/20
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,47 +7,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Slot_Machine_Game.Classes;
 
-// Final form to show total winnings.
-// Player can play again or exit the game.
+// Form showed instead of the messagebox to show how much
+// the player has won after each spin.
+
 
 namespace Slot_Machine_Game.Forms
 {
     public partial class frmDisplayWinnings : Form
     {
-        public frmDisplayWinnings()
+
+        // Constructor that  creates form that shows
+        // the winnings that was passed to it.
+        public frmDisplayWinnings(string inWinnings)
         {
             InitializeComponent();
+            txtDisplayWinnings.Text = inWinnings;
+
         }
 
-        // Show winnings upon load with this event handler.
-        private void frmDisplayWinnings_Load(object sender, EventArgs e)
+
+        private void frmWinLose_Load(object sender, EventArgs e)
         {
-            lblCoinsWon.Text = GlobalsClass.playerObject.getScore().ToString();
+
+            if (txtDisplayWinnings.Text == "300")
+            {
+                lblWinnings.Text = "Jackpot, go crazy folks!";
+            }
+            if (txtDisplayWinnings.Text == "0")
+            {
+                lblWinnings.Text = "Slump? You're not in a slump. You're just not hitting...";
+            }
+            else
+            {
+                lblWinnings.Text = "You win!";
+            }
+
+
+
+
         }
 
-        // Exit button click event handler.
-        private void btnExit_Click(object sender, EventArgs e)
+        // Ok button just hides the form.
+        private void btnOK_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
-
-        // Play again button click event handler.
-        // Reset player.
-        private void btnPlayAgain_Click(object sender, EventArgs e)
-        {
-            GlobalsClass.playerObject.reset();
-            Form newGame = new frmWelcomePage();
-            newGame.Show();
-            this.Close();
-        }
-
-        
-
-        // Might show a top 10 leaderboard since we have
-        // a player class to work with.
-        // private void btnLeaderBoard_Click(.., .. ) { }
-
     }
 }

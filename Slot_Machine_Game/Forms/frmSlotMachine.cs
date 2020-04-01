@@ -122,30 +122,32 @@ namespace Slot_Machine_Game.Forms
 
                 winnings = calculateReelCombos();
 
-                if (winnings == 300)
+                txtWinnings.Text = winnings.ToString();
+
+                // Show form Display Winnings for winnings.
+                // pass in the winnings.
+                if (winnings > 0)
                 {
-                    MessageBox.Show("+300 \n Go crazy folks, go crazy!", "JACKPOT");
+                    frmDisplayWinnings frmRef = new frmDisplayWinnings(txtWinnings.Text);
+                    frmRef.Show();
                     totalScore += winnings;
                     txtBalance.Text = totalScore.ToString();
                 }
                 else if (winnings == 0)
                 {
-                    MessageBox.Show("0\n Slump? You're not in a slump. You're just not hitting...",
-                        "You Lose");
+                    frmDisplayWinnings frmRef = new frmDisplayWinnings(txtWinnings.Text);
+                    frmRef.Show();
                     totalScore -= currentBet;
                     txtBalance.Text = totalScore.ToString();
+                    if (totalScore <=0 )
+                    {
+                        frmRef.Hide();
+                    }
                 }
-                else
-                {
-                    MessageBox.Show(" + " + winnings, "You Win");
-                    totalScore += winnings;
-                    txtBalance.Text = totalScore.ToString();
-                }
-
-                txtWinnings.Text = winnings.ToString();
 
                 if (totalScore <= 0)
                 {
+                    
                     MessageBox.Show("Give up, just quit, because in this life, " +
                         "you can’t win. Yeah, you can try, but in the end you’re just " +
                         "gonna lose, big time, because the world is run by the Man. The " +
@@ -158,7 +160,7 @@ namespace Slot_Machine_Game.Forms
                         "don’t waste your time trying to make anything cool or pure or awesome " +
                         "’cause the Man is just gonna call you a fat washed up loser and crush " +
                         "your soul. So do yourselves a favor and just GIVE UP!", "Out Of Coins");
-                    Form frmDisplayWinnings = new Forms.frmDisplayWinnings();
+                    Form frmDisplayWinnings = new Forms.frmDisplayFinalWinnings();
                     frmDisplayWinnings.Show();
                     this.Hide();
                 }
@@ -177,7 +179,7 @@ namespace Slot_Machine_Game.Forms
         private void btnCashOut_Click(object sender, EventArgs e)
         {
             GlobalsClass.playerObject.setScore(totalScore);
-            Form frmDisplayWinnings = new Forms.frmDisplayWinnings();
+            Form frmDisplayWinnings = new Forms.frmDisplayFinalWinnings();
             frmDisplayWinnings.Show();
             this.Hide();
         }
