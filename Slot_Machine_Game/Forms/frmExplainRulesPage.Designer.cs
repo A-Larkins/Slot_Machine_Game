@@ -62,7 +62,7 @@
             this.pbWinningsTable.Image = ((System.Drawing.Image)(resources.GetObject("pbWinningsTable.Image")));
             this.pbWinningsTable.Location = new System.Drawing.Point(82, 236);
             this.pbWinningsTable.Name = "pbWinningsTable";
-            this.pbWinningsTable.Size = new System.Drawing.Size(636, 352);
+            this.pbWinningsTable.Size = new System.Drawing.Size(636, 596);
             this.pbWinningsTable.TabIndex = 3;
             this.pbWinningsTable.TabStop = false;
             // 
@@ -71,7 +71,7 @@
             this.lblWinningsTable.AutoSize = true;
             this.lblWinningsTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWinningsTable.ForeColor = System.Drawing.Color.Maroon;
-            this.lblWinningsTable.Location = new System.Drawing.Point(270, 181);
+            this.lblWinningsTable.Location = new System.Drawing.Point(275, 183);
             this.lblWinningsTable.Name = "lblWinningsTable";
             this.lblWinningsTable.Size = new System.Drawing.Size(253, 37);
             this.lblWinningsTable.TabIndex = 4;
@@ -82,7 +82,7 @@
             this.AcceptButton = this.btnPlay;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 614);
+            this.ClientSize = new System.Drawing.Size(799, 841);
             this.Controls.Add(this.lblWinningsTable);
             this.Controls.Add(this.pbWinningsTable);
             this.Controls.Add(this.btnPlay);

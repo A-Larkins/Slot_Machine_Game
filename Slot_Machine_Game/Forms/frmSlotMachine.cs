@@ -117,6 +117,7 @@ namespace Slot_Machine_Game.Forms
         {
             if (currentBet <= totalScore)
             {
+
                 btnSpin.BackColor = Color.SteelBlue;
                 spin();
 
@@ -147,19 +148,9 @@ namespace Slot_Machine_Game.Forms
 
                 if (totalScore <= 0)
                 {
-                    
-                    MessageBox.Show("Give up, just quit, because in this life, " +
-                        "you can’t win. Yeah, you can try, but in the end you’re just " +
-                        "gonna lose, big time, because the world is run by the Man. The " +
-                        "Man, oh, you don’t know the Man? He’s everywhere. In the White " +
-                        "House… down the hall… Ms. Mullins, she’s the Man. And the Man " +
-                        "ruined the ozone, he’s burning down the Amazon, and he kidnapped " +
-                        "Shamu and put her in a chlorine tank! And there used to be a way " +
-                        "to stick it to the Man. It was called rock ‘n roll, but guess what, " +
-                        "oh no, the Man ruined that, too, with a little thing called MTV! So " +
-                        "don’t waste your time trying to make anything cool or pure or awesome " +
-                        "’cause the Man is just gonna call you a fat washed up loser and crush " +
-                        "your soul. So do yourselves a favor and just GIVE UP!", "Out Of Coins");
+
+                    youFailed();
+
                     Form frmDisplayWinnings = new Forms.frmDisplayFinalWinnings();
                     frmDisplayWinnings.Show();
                     this.Hide();
@@ -173,6 +164,24 @@ namespace Slot_Machine_Game.Forms
 
             
         }
+
+        //  Helper method to display a long messagebox about failure.
+        private void youFailed()
+        {
+            MessageBox.Show("Give up, just quit, because in this life, " +
+                "you can’t win. Yeah, you can try, but in the end you’re just " +
+                "gonna lose, big time, because the world is run by the Man. The " +
+                "Man, oh, you don’t know the Man? He’s everywhere. In the White " +
+                "House… down the hall… Ms. Mullins, she’s the Man. And the Man " +
+                "ruined the ozone, he’s burning down the Amazon, and he kidnapped " +
+                "Shamu and put her in a chlorine tank! And there used to be a way " +
+                "to stick it to the Man. It was called rock ‘n roll, but guess what, " +
+                "oh no, the Man ruined that, too, with a little thing called MTV! So " +
+                "don’t waste your time trying to make anything cool or pure or awesome " +
+                "’cause the Man is just gonna call you a fat washed up loser and crush " +
+                "your soul. So do yourselves a favor and just GIVE UP!", "Out Of Coins");
+        }
+
 
         // Click event handler method to exit slot machine form
         // and go to display winnings form. player object's score is total score.
@@ -204,9 +213,9 @@ namespace Slot_Machine_Game.Forms
                 pbSlotReel2.Refresh();
                 pbSlotReel3.Image = imgListForReels.Images[randNumForReel_3];
                 pbSlotReel3.Refresh();
-                
-                // Wait 500 milliseconds.
-                Task.Delay(500).Wait();
+
+                // not much time between so it'll flash.
+                Task.Delay(120).Wait();
             }
             timer.Stop();
         }
@@ -223,6 +232,9 @@ namespace Slot_Machine_Game.Forms
             spinResult[randNumForReel_2]++;
             spinResult[randNumForReel_3]++;
             
+            // winning combos
+
+            // 3 pics match
             // case 1: 777
             if (spinResult[0] == 3) return 100 * currentBet;
             // case 2: banana, banana, banana
@@ -233,9 +245,56 @@ namespace Slot_Machine_Game.Forms
             if (spinResult[3] == 3) return 10 * currentBet;
             // case 5: cherry, cherry, cherry
             if (spinResult[4] == 3) return 5 * currentBet;
-            // Maybe add more combos here later.
 
+            // 2 pics match
+            // case 6: banana, banana
+            if (spinResult[1] == 2)
+            {
+                switch (currentBet)
+                {
+                    case 2: return 5;
+                    case 3: return 6;
+                    default: return 4;
+                }   
+            }
+            // case 7: apple, apple
+            if (spinResult[2] == 2)
+            {
+                switch (currentBet)
+                {
+                    case 2: return 4;
+                    case 3: return 5;
+                    default: return 3;
+                }
+            }
+            // case 8: orange, orange
+            if (spinResult[3] == 2)
+            {
+                switch (currentBet)
+                {
+                    case 2: return 3;
+                    case 3: return 4;
+                    default: return 2;
+                }
+            }
+            // case 9: cherry, cherry
+            if (spinResult[4] == 2)
+            {
+                switch (currentBet)
+                {
+                    case 2: return 2;
+                    case 3: return 3;
+                    default: return 1;
+                }
+            }
+
+
+            // no matches
+            // case 10: you lose
             else return 0;
         }
+
+
+
     }
 }

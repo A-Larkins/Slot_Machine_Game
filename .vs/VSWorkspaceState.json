@@ -2,6 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Slot_Machine_Game",
+    "\\Slot_Machine_Game\\bin",
+    "\\Slot_Machine_Game\\bin\\Debug",
     "\\Slot_Machine_Game\\Classes",
     "\\Slot_Machine_Game\\Forms",
     "\\Slot_Machine_Game\\Pics"

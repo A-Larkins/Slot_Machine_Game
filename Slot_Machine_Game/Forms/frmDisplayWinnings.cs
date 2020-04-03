@@ -26,15 +26,39 @@ namespace Slot_Machine_Game.Forms
 
         }
 
-
+        // Load form method. If there's a jackpot or 0 give a special message,
+        // otherwise print the winnings.
         private void frmWinLose_Load(object sender, EventArgs e)
         {
+            // convert txt winnings to int
+            int winnings = Convert.ToInt32(txtDisplayWinnings.Text);
 
-            if (txtDisplayWinnings.Text == "300")
+            if (winnings == 300)
             {
                 lblWinnings.Text = "Jackpot, go crazy folks!";
             }
-            else if (txtDisplayWinnings.Text == "0")
+            else if (winnings == 100)
+            {
+                lblWinnings.Text = "And boom goes the dynamite.";
+            }
+            else if (winnings == 150 || winnings == 200)
+            {
+                lblWinnings.Text = "Now gamble it all away...";
+            }
+            else if (winnings >= 25 && winnings <= 75)
+            {
+                lblWinnings.Text = "It's not broken.. !?!";
+            }
+            else if (winnings == 15)
+            {
+                lblWinnings.Text = "It's all about the cherries...";
+            }
+            else if (winnings == 3)
+            {
+                lblWinnings.Text = "Losing feels worse than winning feels good.";
+            }
+
+            else if (winnings == 0)
             {
                 lblWinnings.Text = "Slump? You're not in a slump. You're just not hitting...";
             }
@@ -42,9 +66,6 @@ namespace Slot_Machine_Game.Forms
             {
                 lblWinnings.Text = "You win!";
             }
-
-
-
 
         }
 
