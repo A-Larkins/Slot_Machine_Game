@@ -13,6 +13,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,6 +37,15 @@ namespace Slot_Machine_Game.Forms
         private int randNumForReel_2;
         private int randNumForReel_3;
 
+        // spin noise
+        //SoundPlayer spinNoise = new SoundPlayer(@"D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\Resources\reel_spin.mp3");
+        // jackpot noise
+        SoundPlayer jackpotNoise = new SoundPlayer(@"D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\Resources\jackpot.wav");
+        // win noise
+        SoundPlayer winNoise = new SoundPlayer(@"D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\Resources\slot_win.wav");
+        // lose noise
+        SoundPlayer loseNoise = new SoundPlayer(@"D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\Resources\lose.wav");
+
         // Constructor.
         public frmSlotMachine()
         {
@@ -46,6 +56,7 @@ namespace Slot_Machine_Game.Forms
         //   button is hidden until bet is > 1.
         private void frmSlotMachine_Load(object sender, EventArgs e)
         {
+
             txtBalance.Text = totalScore.ToString();
             txtPlayerName.Text = name;
             txtPlayerName.Enabled = false;
@@ -115,6 +126,7 @@ namespace Slot_Machine_Game.Forms
         // Let user play until they have 0 coins.
         private void btnSpin_Click(object sender, EventArgs e)
         {
+            //spinNoise.Play();
             if (currentBet <= totalScore)
             {
 
@@ -168,6 +180,7 @@ namespace Slot_Machine_Game.Forms
         //  Helper method to display a long messagebox about failure.
         private void youFailed()
         {
+            loseNoise.Play();
             MessageBox.Show("Give up, just quit, because in this life, " +
                 "you can’t win. Yeah, you can try, but in the end you’re just " +
                 "gonna lose, big time, because the world is run by the Man. The " +
@@ -231,25 +244,45 @@ namespace Slot_Machine_Game.Forms
             spinResult[randNumForReel_1]++;
             spinResult[randNumForReel_2]++;
             spinResult[randNumForReel_3]++;
-            
-            // winning combos
 
+            // winning combos
             // 3 pics match
             // case 1: 777
-            if (spinResult[0] == 3) return 100 * currentBet;
+            if (spinResult[0] == 3)
+            {
+                jackpotNoise.Play();
+                return 100 * currentBet;
+            }
             // case 2: banana, banana, banana
-            if (spinResult[1] == 3) return 50 * currentBet;
+            else if (spinResult[1] == 3)
+            {
+                winNoise.Play();
+                return 50 * currentBet;
+            }
             // case 3: apple, apple, apple
-            if (spinResult[2] == 3) return 25 * currentBet;
-            // case 4: orange, orange, orange
-            if (spinResult[3] == 3) return 10 * currentBet;
-            // case 5: cherry, cherry, cherry
-            if (spinResult[4] == 3) return 5 * currentBet;
+            else if (spinResult[2] == 3)
+            {
+                winNoise.Play();
+                return 25 * currentBet;
 
+            }
+            // case 4: orange, orange, orange
+            else if (spinResult[3] == 3)
+            {
+                winNoise.Play();
+                return 10 * currentBet;
+            }
+            // case 5: cherry, cherry, cherry
+            else if (spinResult[4] == 3)
+            {
+                winNoise.Play();
+                return 5 * currentBet;
+            }
             // 2 pics match
             // case 6: banana, banana
-            if (spinResult[1] == 2)
+            else if (spinResult[1] == 2)
             {
+                winNoise.Play();
                 switch (currentBet)
                 {
                     case 2: return 5;
@@ -258,8 +291,9 @@ namespace Slot_Machine_Game.Forms
                 }   
             }
             // case 7: apple, apple
-            if (spinResult[2] == 2)
+            else if (spinResult[2] == 2)
             {
+                winNoise.Play();
                 switch (currentBet)
                 {
                     case 2: return 4;
@@ -268,8 +302,9 @@ namespace Slot_Machine_Game.Forms
                 }
             }
             // case 8: orange, orange
-            if (spinResult[3] == 2)
+            else if (spinResult[3] == 2)
             {
+                winNoise.Play();
                 switch (currentBet)
                 {
                     case 2: return 3;
@@ -278,8 +313,9 @@ namespace Slot_Machine_Game.Forms
                 }
             }
             // case 9: cherry, cherry
-            if (spinResult[4] == 2)
+            else if (spinResult[4] == 2)
             {
+                winNoise.Play();
                 switch (currentBet)
                 {
                     case 2: return 2;
@@ -287,11 +323,13 @@ namespace Slot_Machine_Game.Forms
                     default: return 1;
                 }
             }
-
-
             // no matches
             // case 10: you lose
-            else return 0;
+            else
+            {
+                loseNoise.Play();
+                return 0;
+            }
         }
 
 

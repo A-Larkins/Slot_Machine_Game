@@ -1,13 +1,9 @@
 {
   "ExpandedNodes": [
-    "",
     "\\Slot_Machine_Game",
     "\\Slot_Machine_Game\\bin",
     "\\Slot_Machine_Game\\bin\\Debug",
-    "\\Slot_Machine_Game\\Classes",
-    "\\Slot_Machine_Game\\Forms",
-    "\\Slot_Machine_Game\\Pics"
+    "\\Slot_Machine_Game\\Forms"
   ],
-  "SelectedNode": "\\Slot_Machine_Game\\Forms\\frmWelcomePage.cs",
   "PreviewInSolutionExplorer": false
 }

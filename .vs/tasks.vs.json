@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "task-jackpot",
+      "appliesTo": "Slot_Machine_Game/Resources/jackpot.wav",
+      "type": "launch"
+    }
+  ]
+}

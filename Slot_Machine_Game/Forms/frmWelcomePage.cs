@@ -12,6 +12,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,10 +30,14 @@ namespace Slot_Machine_Game
         private string playerInputName;
         private int playerInputBalance = 0;
 
+        // intro music
+        SoundPlayer jackpotSound = new SoundPlayer(@"D:\GitHub\Slot_Machine_Game\Slot_Machine_Game\Resources\intro_music.wav");
+
         // Constructor.
         public frmWelcomePage()
         {
             InitializeComponent();
+
         }
 
         // Event handler for when the OK button is clicked. Check if name is valid,
@@ -75,7 +80,11 @@ namespace Slot_Machine_Game
                 txtName.Focus();
             }
         }
-        
 
+        // Load event to play intro music.
+        private void frmWelcomePage_Load(object sender, EventArgs e)
+        {
+            //jackpotSound.Play();
+        }
     }
 }
